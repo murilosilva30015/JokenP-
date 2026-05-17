@@ -3,49 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Convert Money</title>
+<link rel="stylesheet" href="/style.css">   
+<title>Sorteador Dev</title>
 </head>
 <body>
-    <img class="logo" src="./assets/logo.gif" alt="logo-convert-money" />
-    <main>
-      <label>
-        Converter <b>de</b>
-        <select>
-          <option>R$ Real brasileiro</option>
-        </select>
-      </label>
-      <label>
-        Converter <b>para</b>
-        <select class="currency-select">
-          <option value="dolar">US$ Dólar americano</option>
-          <option value="euro">€ Euro</option>
-          <option value="libra">£ Libra</option>
-          <option value="bitcoin">₿ Bitcoin</option>
-        </select>
-      </label>
-      <label>
-        Valor
-        <input class="input-currency" placeholder="10.000,00" />
-      </label>
-      <button class="convert-button">Converter</button>
-      <section>
-        <div class="currency-box">
-          <img src="./assets/brasil 2.png" alt="Logo-moeda-a-converter" />
-          <p class="currency">Real</p>
-          <p class="currency-value-to-convert">R$ 0,00</p>
-        </div>
-        <img class="arrow-img" src="./assets/Vector.png" alt="seta" />
-        <div class="currency-box">
-          <img class="currency-img"
-            src="./assets/estados-unidos (1) 1.png"
-            alt="logo-moeda-convertida"
-          />
-          <p class="currency" id="currency-name">Dólar americano</p>
-          <p class="currency-value">US$ 0.00</p>
-        </div>
-      </section>
-    </main>
+    <img src="./assets/sort 1.png" alt="imagem-site" class="logo">
+<h2>Sortear um Número</h2>
+<div>
+    <input placeholder="Entre" type="number" class="input-minimo">
+    <input placeholder="e" type="number" class="input-maximo">
+</div>
+<button onclick="generateNumber()">Sortear</button>
+<p id="result" class="result"></p>
 </body>
 <script src="./script.js"></script>
 </html>
