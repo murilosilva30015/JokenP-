@@ -4,6 +4,6 @@ function generateNumber() {
     const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
     const resultEl = document.getElementById('result');
-    if (resultEl) resultEl.textContent = `O  número sorteado foi: ${result}`;
+    if (resultEl) resultEl.textContent = `O número sorteado foi: ${result}`;
 }
 
