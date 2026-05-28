@@ -1,5 +1,5 @@
 <h1>
-  Dev Sorteio
+ Jokenpô
 </h1>
 <br><br>
 <h2>
