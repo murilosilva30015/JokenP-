@@ -1,87 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {font-family: "Roboto", sans-serif; 
-margin: 0;
-padding: 0;
-outline: none;
-box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
+    background: url(https://picsum.photos/1920/1080);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #000;
 }
-.logo{
-   
-    margin-bottom: 85px;
-    width: 483px;
-    height: 290px;
-    top: 156px;
-    left: 728px;
-    opacity: 1;
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    margin: 30px 0;
 }
-    h2{
-width: 299px;
-height: 20px;
-top: 656px;
-left: 870px;
-opacity: 1;
-font-family: Roboto;
-font-weight: 400;
-font-style: normal;
-font-size: 32px;
-line-height: 100%;
-letter-spacing: 0px;
-color: #FFFFFF;
-margin-bottom: 29px;
-}
-input{
-    background: rgba(255, 255, 255, 0.25);
-    border: rgba(255, 255, 255, 0.2);
-    color: #FFFFFF;
-    border-radius: 14px;
-    height: 53px;
-    width: 342px;
-    padding-left: 20px;
-    font-weight: 400px;
-    font-size: 40px;
-    top: 705px;
-    left: 647px;
-    line-height: 47px;
-    border-width: 1px;
-    font-family: Roboto;
-    opacity: 1;
-    }
-    .input-maximo{
-        margin-left: 20px;
-    }
-button{
-    width: 341px;
-    height: 61px;
-    margin-top: 34px;
-    font-size: 37px;
-    top: 858px;
-    left: 849px;
-    opacity: 1;
+
+button {
+    padding: 10px;
+    border: none;
+    font-size: 50px;
     border-radius: 10px;
-    color: #FFFFFF;
-    background: #AEC346;
-    box-shadow: 0px 18px 40px 0px #AEC34659;
     cursor: pointer;
-}
-button:hover{
-    opacity: 0.9;
-}
-button:active{
-  opacity: 0.8;
-
+    transition: opacity 0.5s ease-in-out;
 }
 
-.result{
-    margin-top: 20px;
-    font-size: 32px;
-    color: #fff;
+button:hover {
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: #a200ff;
+}
+
+#paper {
+    background-color: #00ff00;
+}
+
+#scissors {
+    background-color: #0000ff;
+}
+
+p {
+
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.your-score span {
+    color: rgb(21,64,137);
+}
+.machine-score span {
+    color: rgb(137,21,21);
 }
